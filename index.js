@@ -44,7 +44,7 @@ function listeners() {
 
 // create initial size
 
-let gridSize = gridInputValue.ariaValueMax;
+let gridSize = gridInput.value;
 setHeight();
 appendSquares(gridSize);
 colorEls[0].classList.add("active-color");

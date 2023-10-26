@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ededed;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.6rem 0;
+  height: 100vh;
+  min-height: 650px;
+  width: 100%;
+}
+
+footer {
+  display: none;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 0.35rem;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+input {
+  display: block;
+  margin: 0.5rem 0 1rem;
+  width: 210px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+i {
+  font-style: normal;
+  font-size: 24px;
+}
+
+a,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.canvas {
+  width: 93.33%;
+  max-width: 420px;
+  max-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 2px 2px 12px 0 rgba(49, 48, 49, 0.404);
+}
+
+.controlsContainer {
+  flex-grow: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 372px;
+}
+
+.eraseButton {
+  align-self: center;
+  padding: 0.55rem 1.25rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: translateY(-8px);
+  border-radius: 7px;
+  border: none;
+  background: blue;
+  color: #eeeeee;
+  transition: color 260ms linear, background 260ms linear;
+  cursor: pointer;
+}
+
+.eraseButton:hover {
+  color: rgb(255, 73, 73);
+  background: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.377);
+}
+
+.square {
+  user-select: none;
+}
+
+.pickerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.pickers {
+  width: 372px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.color {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.current-color {
+  box-shadow: 0 0 7px 3px rgb(65, 68, 252);
+}
