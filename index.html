@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Draw</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./colours.js" defer></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Let's draw something!</h1>
+      <div class="container">
+        <div class="canvas" id="canvas">
+          <div class="controlsContainer">
+            <div class="controls">
+              <button id="erase" class="eraseButton">Clear Board</button>
+              <div class="slider">
+                <label for="size"
+                  >Grid Size: <span id="size-text">48 x 48</span></label
+                >
+                <input
+                  type="range"
+                  name="size"
+                  id="size"
+                  min="16"
+                  max="80"
+                  value="48"
+                  step="16"
+                />
+              </div>
+            </div>
+
+            <div class="pickerContainer">
+              <div class="pickers" id="pickers"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>Copyright @2023 Tamas Pinter</footer>
+</html>
