@@ -7,14 +7,14 @@ const colorEls = document.querySelectorAll(".color");
 
 // determine grid size
 function setHeight() {
-  const width = canvas.getBoundingClientReact().width;
+  const width = canvas.getBoundingClientRect().width;
   const height = width;
   canvas.style.height = height + "px";
 }
 
 // set grid size
 
-function setGridSize(size) {
+function appendSquares(size) {
   canvas.innerText = "";
   const squareWidth = 100 / size + "%";
   const squareHeight = squareWidth;

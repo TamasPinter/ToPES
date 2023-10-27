@@ -149,3 +149,66 @@ a:active {
 .current-color {
   box-shadow: 0 0 7px 3px rgb(65, 68, 252);
 }
+
+@media (max-width: 380px) {
+  html {
+    font-size: 15px;
+  }
+
+  .controls {
+    max-width: 320px;
+  }
+
+  input {
+    width: 180px;
+  }
+
+  .pickers {
+    max-width: 320px;
+  }
+
+  .color {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (min-width: 720px) {
+  footer {
+    display: block;
+  }
+
+  .container {
+    flex-direction: row-reverse;
+    padding-bottom: 4.5rem;
+    position: relative;
+    justify-content: space-evenly;
+    max-width: 800px;
+  }
+
+  .pickers {
+    max-width: 140px;
+  }
+
+  .color:nth-of-type(1) {
+    order: -2;
+  }
+
+  .color:nth-of-type(6) {
+    order: -1;
+  }
+
+  .controls-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 160px;
+  }
+
+  .controls {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -0;
+    transform: translateX(-50%);
+  }
+}
