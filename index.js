@@ -1,7 +1,7 @@
 // find DOM elements
 const canvas = document.getElementById("canvas");
 const gridInput = document.getElementById("size");
-const gridSizeValue = document.getElementById("grid-size");
+const gridSizeValue = document.getElementById("size-text");
 const eraseBtn = document.getElementById("erase");
 const colorEls = document.querySelectorAll(".color");
 
@@ -67,7 +67,7 @@ window.addEventListener("resize", (event) => {
 // listen for grid changes
 
 gridInput.oninput = (event) => {
-  gridSize = event.targer.value;
+  gridSize = event.target.value;
   gridSizeValue.textContent = `${gridSize} x ${gridSize}`;
   appendSquares(gridSize);
 };
